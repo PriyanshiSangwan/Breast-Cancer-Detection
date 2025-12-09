@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__)
 
 # Load the trained model and scaler
-model = pickle.load(open("breast_cancer_model.pkl", "rb"))
+model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # Breast cancer feature names (30 features)
